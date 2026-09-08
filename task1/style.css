@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #f5f5f5;
+}
+
+/* Навигация */
+.nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background: #2c3e50;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav a:hover {
+    color: #f39c12;
+}
+
+/* Шапка */
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    background: white;
+    padding: 40px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.header-info h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.position {
+    color: #7f8c8d;
+    font-size: 18px;
+}
+
+.slogan {
+    font-style: italic;
+    color: #95a5a6;
+}
+
+/* Секции */
+.section {
+    background: white;
+    padding: 30px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.section h2 {
+    margin-bottom: 15px;
+    color: #2c3e50;
+    border-bottom: 2px solid #f39c12;
+    padding-bottom: 5px;
+}
+
+.section ul {
+    list-style-position: inside;
+}
+
+.section li {
+    margin-bottom: 8px;
+}
+
+/* Навыки */
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill {
+    background: #3498db;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+/* Контакты */
+.footer {
+    background: #2c3e50;
+    color: white;
+    padding: 30px;
+    margin: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.footer h2 {
+    margin-bottom: 15px;
+    color: #f39c12;
+}
+
+.contacts-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.contacts-list a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    border: 1px solid white;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.contacts-list a:hover {
+    background: #f39c12;
+    color: #2c3e50;
+}
