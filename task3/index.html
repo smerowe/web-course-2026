@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Master</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>✨ Task Master</h1>
+            <p class="subtitle">Организуй свой день</p>
+        </div>
+        
+        <div class="input-wrapper">
+            <input type="text" id="taskInput" placeholder="Что нужно сделать?">
+            <button id="addButton">
+                <span>+</span>
+            </button>
+        </div>
+        
+        <div class="stats">
+            <div class="stat-item">
+                <span class="stat-number" id="remainingCount">0</span>
+                <span class="stat-label">осталось</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <span class="stat-number" id="completedCount">0</span>
+                <span class="stat-label">выполнено</span>
+            </div>
+        </div>
+        
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">Все</button>
+            <button class="filter-btn" data-filter="active">Активные</button>
+            <button class="filter-btn" data-filter="completed">Готовые</button>
+        </div>
+        
+        <ul id="taskList" class="task-list"></ul>
+        
+        <div class="empty-state" id="emptyState">
+            <div class="empty-icon">📝</div>
+            <p>Нет задач. Добавьте первую!</p>
+        </div>
+    </div>
+    
+    <script src="script.js" defer></script>
+</body>
+</html>
