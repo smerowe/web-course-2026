@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon Says</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Simon Says</h1>
+            <p class="subtitle">Запомни последовательность и повтори её</p>
+        </div>
+
+        <div class="info-bar">
+            <div class="info-item">
+                <span class="info-label">Уровень</span>
+                <span class="info-value" id="levelDisplay">0</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">Рекорд</span>
+                <span class="info-value" id="bestDisplay">0</span>
+            </div>
+        </div>
+
+        <div class="board" id="board">
+            <div class="btn-sector" data-index="0" id="btn0">
+                <div class="sector-inner green"></div>
+            </div>
+            <div class="btn-sector" data-index="1" id="btn1">
+                <div class="sector-inner red"></div>
+            </div>
+            <div class="btn-sector" data-index="2" id="btn2">
+                <div class="sector-inner yellow"></div>
+            </div>
+            <div class="btn-sector" data-index="3" id="btn3">
+                <div class="sector-inner blue"></div>
+            </div>
+            <div class="center-circle">
+                <button id="startBtn">Старт</button>
+            </div>
+        </div>
+
+        <p id="message" class="message"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
