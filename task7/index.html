@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лента постов</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page">
+        <header class="top-header">
+            <div class="header-inner">
+                <div class="logo">
+                    <span class="logo-icon">📰</span>
+                    <span class="logo-text">PostFeed</span>
+                </div>
+                <p class="header-subtitle">Бесконечная лента из jsonplaceholder API</p>
+            </div>
+        </header>
+
+        <main class="main">
+            <div class="search-wrapper">
+                <div class="search-box">
+                    <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                    <input type="text" id="searchInput" placeholder="Поиск по заголовку...">
+                    <kbd class="shortcut">⌘K</kbd>
+                </div>
+            </div>
+
+            <div class="feed-header">
+                <h2 class="feed-title">Последние публикации</h2>
+                <span class="post-count" id="postCount">0 постов</span>
+            </div>
+
+            <div class="posts-container" id="postsContainer"></div>
+
+            <div id="loader" class="loader hidden">
+                <div class="spinner"></div>
+                <span>Загружаем посты...</span>
+            </div>
+
+            <div id="endMessage" class="end-message hidden">
+                <div class="end-icon">🎉</div>
+                <p>Вы дочитали до конца!</p>
+                <span class="end-sub">Больше постов нет</span>
+            </div>
+
+            <div id="errorMessage" class="error-message hidden">
+                <div class="error-content">
+                    <span class="error-icon">⚠️</span>
+                    <div class="error-details">
+                        <strong>Не удалось загрузить</strong>
+                        <span id="errorText">Проверьте подключение к интернету</span>
+                    </div>
+                    <button id="retryBtn">Повторить</button>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>Лабораторная работа №7 · Async/Await · Fetch API</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
