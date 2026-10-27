@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Змейка</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🐍 Змейка</h1>
+            <p class="subtitle">Управление: стрелки ← ↑ → ↓</p>
+        </div>
+
+        <div class="info-bar">
+            <div class="info-item">
+                <span class="info-label">Счёт</span>
+                <span class="info-value" id="scoreDisplay">0</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">Рекорд</span>
+                <span class="info-value" id="bestDisplay">0</span>
+            </div>
+        </div>
+
+        <div class="canvas-wrapper">
+            <canvas id="gameCanvas" width="400" height="400"></canvas>
+            <div id="overlay" class="overlay hidden">
+                <div class="overlay-content">
+                    <h2 id="overlayTitle">Игра окончена</h2>
+                    <p id="overlayScore">Счёт: 0</p>
+                    <button id="restartBtn">Начать заново</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="controls-hint">
+            <span>↑ ↓ ← →</span> — движение &nbsp;|&nbsp; <span>Пробел</span> — пауза
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
