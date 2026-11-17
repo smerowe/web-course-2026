@@ -141,7 +141,6 @@ function startGame() {
         updateLevel();
 
         sequence.push(getRandomSector());
-        sequence.push(getRandomSector());
         updateLevel();
 
         setTimeout(() => showSequence(), 500);
